@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -23,13 +24,13 @@ export default function Card({ index, x }) {
         />
         <div className="gradient3"></div>
         <div className="NewsRightCenter w-100 h-100 flex item-center justify-center gap-1">
-          <div className="fs-16 a text-light text-white family2 w-100 text-end">
+          <div className="fs-16 a text-light text-white font-sans w-100 text-end">
             Add to Cart{" "}
           </div>
           <div className="fs-16 text-white">/</div>
           <Link
             href={"/takeout/2303404"}
-            className="fs-16 a text-light text-white family2 w-100"
+            className="fs-16 a text-light text-white font-sans w-100"
           >
             Details
           </Link>
@@ -39,11 +40,11 @@ export default function Card({ index, x }) {
         <div className="w-90 auto flex column h-100 bottom item-center justify-center">
           <h3
             style={{ fontStyle: "italic" }}
-            className="family3 fs-30 uppercase text-light text-dark text-center"
+            className="font-mono fs-30 uppercase text-light text-dark text-center"
           >
             {x.title}
           </h3>
-          <h4 className="family2 text-light fs-24">${x.price}</h4>
+          <h4 className="font-sans text-light fs-24">${x.price}</h4>
         </div>
       </div>
     </CardContent>

@@ -52,6 +52,9 @@ const ExperienceContent = styled.div`
       background-color: #000;
       .experienceRightC {
         width: 50%;
+        @media (max-width: 680px) {
+          width: 80%;
+        }
       }
     }
     @media (max-width: 980px) {

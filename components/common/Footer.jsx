@@ -1,9 +1,10 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import {ImFacebook} from 'react-icons/im'
-import {FaTwitter} from 'react-icons/fa'
-import {AiOutlineInstagram, AiOutlineYoutube} from 'react-icons/ai'
+import { ImFacebook } from "react-icons/im";
+import { FaTwitter } from "react-icons/fa";
+import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 export default function Footer() {
   return (
     <FooterContainer className="flex item-center">
@@ -20,16 +21,16 @@ export default function Footer() {
         </h4>
         <div className="w-100 flex item-center justify-center gap-1">
           <div className="icon flex item-center justify-center">
-            <ImFacebook fontSize={'20px'}/>
+            <ImFacebook fontSize={"20px"} />
           </div>
           <div className="icon flex item-center justify-center">
-            <FaTwitter fontSize={'20px'}/>
+            <FaTwitter fontSize={"20px"} />
           </div>
           <div className="icon flex item-center justify-center">
-            <AiOutlineInstagram fontSize={'20px'}/>
+            <AiOutlineInstagram fontSize={"20px"} />
           </div>
           <div className="icon flex item-center justify-center">
-            <AiOutlineYoutube fontSize={'20px'}/>
+            <AiOutlineYoutube fontSize={"20px"} />
           </div>
         </div>
       </div>
@@ -48,9 +49,9 @@ const FooterContainer = styled.div`
     url(https://avada.website/restaurant/wp-content/uploads/sites/112/2020/01/slider52x-1200x1107.jpg);
 
   .icon {
-    background:#fff;
-    border-radius:50%;
-    width:5rem;
-    height:5rem;
+    background: #fff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
   }
 `;

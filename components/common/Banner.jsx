@@ -8,12 +8,12 @@ export default function Banner({ type, text, subtext }) {
       <BannerContent className="image1">
         <div className="w-85 bannerHeader auto flex item-center justify-center column gap-2">
           <h4
-            className="fs-24 text-light uppercase text-white family3"
+            className="fs-24 text-light uppercase text-white font-work"
             style={{ letterSpacing: "1.5px", fontWeight: "normal" }}
           >
             {subtext}
           </h4>
-          <h1 className="family3 text-light uppercase text-white">{text}</h1>
+          <h1 className="font-mono text-light uppercase text-white">{text}</h1>
         </div>
         <div className="gradient2"></div>
         <Image
@@ -31,10 +31,10 @@ export default function Banner({ type, text, subtext }) {
   return (
     <BannerContent >
       <div className="w-85 bannerHeader auto flex column gap-2">
-        <h4 className="fs-30 text-light uppercase text-white family3">
+        <h4 className="fs-24 text-light uppercase text-white font-work">
           BEST TABLE IN TOWN
         </h4>
-        <h1 className="family3 text-light uppercase text-white">
+        <h1 className="font-mono text-light uppercase text-white">
           Our Takeout Menu
         </h1>
       </div>
@@ -58,10 +58,10 @@ const BannerContent = styled.div`
   display: flex;
   align-items: center;
   &.image1 {
-    min-height: 30rem;
+    min-height: 24rem;
   }
   .bannerHeader {
-    z-index: 3000;
+    z-index: 2400;
   }
   .imagewrapper {
     position: absolute;
