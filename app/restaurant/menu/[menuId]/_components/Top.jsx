@@ -19,7 +19,7 @@ export default function Top() {
         </div>
         <div className="topright flex-1">
           <div className="flex HeroRightC column gap-4 auto">
-            <div className="family3 h1 text-white">California Wraps</div>
+            <div className="font-mono h1 text-white">California Wraps</div>
             <h4 className="fs-18 family2 text-light text-white">
               Tristique tempus condimentum diam donec. Condimentum ullamcorper
               sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam
