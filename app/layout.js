@@ -1,10 +1,17 @@
-import { Inter, Bebas_Neue, Lora } from "next/font/google";
+import { Work_Sans, Bebas_Neue, Lora } from "next/font/google";
 
 const bebas_neue = Bebas_Neue({
   subsets: ["latin"],
   variable: "--font-bebas",
   display: "swap",
   weight: "400",
+});
+
+const work_sans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const lora = Lora({
@@ -24,7 +31,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${bebas_neue.variable} ${lora.variable}`}>
+    <html
+      lang="en"
+      className={`${bebas_neue.variable} ${lora.variable}  ${work_sans.variable}`}
+    >
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

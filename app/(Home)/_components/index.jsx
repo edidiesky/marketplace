@@ -8,6 +8,8 @@ import SingleTakout from './SingleTakout'
 import TakeoutList from './TakeoutList'
 import TakeoutMenu from './TakeoutMenu'
 import Hero from "./Hero";
+import Footer from "@/components/common/Footer";
+import Copyright from "@/components/common/Copyright";
 
 export default function HomeIndex() {
   return (
@@ -20,6 +22,8 @@ export default function HomeIndex() {
       <TakeoutMenu />
       <TakeoutList />
       <SingleTakout />
+      <Footer/>
+      <Copyright/>
     </div>
   );
 }

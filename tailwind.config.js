@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-lora)"],
         mono: ["var(--font-bebas)"],
+        work: ["var(--font-work)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

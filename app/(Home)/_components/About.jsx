@@ -66,12 +66,12 @@ export default function About() {
             />{" "}
           </span>
         </div>
-        <div className="w-90 auto">
+        <div className="w-90 auto py-14">
           <div className="w-85 auto aboutBottom grid gap-2">
             {data.map((x, index) => {
               return (
                 // eslint-disable-next-line react/jsx-key
-                <div className="w-100 hidden" key={index}>
+                <div className="w-100 overflow-hidden" key={index}>
                   <header
                     key={x.id}
                     data-aos="fade"

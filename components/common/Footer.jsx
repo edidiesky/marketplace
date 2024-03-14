@@ -39,8 +39,7 @@ export default function Footer() {
 
 const FooterContainer = styled.div`
   width: 100%;
-  min-height: 80vh;
-  padding: 4rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(
       180deg,
       #000000 40%,
