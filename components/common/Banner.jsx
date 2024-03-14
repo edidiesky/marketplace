@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
@@ -29,7 +30,7 @@ export default function Banner({ type, text, subtext }) {
     );
   }
   return (
-    <BannerContent >
+    <BannerContent>
       <div className="w-85 bannerHeader auto flex column gap-2">
         <h4 className="fs-24 text-light uppercase text-white font-work">
           BEST TABLE IN TOWN
