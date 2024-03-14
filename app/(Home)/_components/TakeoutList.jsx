@@ -5,7 +5,7 @@ export default function Plans() {
   return (
     <PlansContent>
       <div className="w-90 auto container">
-        <div className="w-100 grid grid-cols-3">
+        <div className="w-100 grid grid-cols-1 lg:grid-cols-3">
           {planData.map((x, index) => {
             return (
               <div
@@ -16,36 +16,40 @@ export default function Plans() {
                 }
                 key={index}
               >
-                <h2
-                  className={
-                    index === 1
-                      ? "top w-85 auto text-start py-3 px-3 fs-16 font-mono uppercase active"
-                      : "top w-85 auto text-start py-3 px-3 fs-16 font-mono uppercase"
-                  }
-                >
-                  {x.title}
-                </h2>
+                <div className="w-90 auto px-6">
+                  <h2
+                    className={
+                      index === 1
+                        ? "top w-85 auto text-start py-3 px-3 fs-16 font-mono uppercase active"
+                        : "top w-85 auto text-start py-3 px-3 fs-16 font-mono uppercase"
+                    }
+                  >
+                    {x.title}
+                  </h2>
 
-                <ul className="w-100 flex column gap-1 py-3">
-                  {x.list.map((x, index) => {
-                    return (
-                      // eslint-disable-next-line react/jsx-key
-                      <div className="w-100" key={index}>
-                        <li className="w-85 auto flex column gap-2 fs-14 text-light center border-bottom py-1 auto">
-                          <div className="flex w-100 item-center gap-2 justify-space">
-                            <h3 className="font-mono text-light fs-30 text-dark">
-                              {x.title}
-                            </h3>
-                            <h3 className="font-mono text-light fs-20 text-dark">
-                              ${x.price}
-                            </h3>
-                          </div>
-                          <h4 className="family2 fs-20 text-light">{x.desc}</h4>
-                        </li>
-                      </div>
-                    );
-                  })}
-                </ul>
+                  <ul className="w-100 flex column gap-1 py-3">
+                    {x.list.map((x, index) => {
+                      return (
+                        // eslint-disable-next-line react/jsx-key
+                        <div className="w-100" key={index}>
+                          <li className="w-85 auto flex column gap-2 fs-14 text-light center border-bottom py-1 auto">
+                            <div className="flex w-100 item-center gap-2 justify-space">
+                              <h3 className="font-mono text-light fs-30 text-dark">
+                                {x.title}
+                              </h3>
+                              <h3 className="font-mono text-light fs-20 text-dark">
+                                ${x.price}
+                              </h3>
+                            </div>
+                            <h4 className="family2 fs-20 text-light">
+                              {x.desc}
+                            </h4>
+                          </li>
+                        </div>
+                      );
+                    })}
+                  </ul>
+                </div>
               </div>
             );
           })}

@@ -5,13 +5,13 @@ import styled from "styled-components";
 export default function Critics() {
   return (
     <CriticsContent className="flex w-100 column gap-4">
-      <h2
+      <h3
         data-aos="fade"
         data-aos-duration="1200"
-        className="fs-45 w-100 text-center family2 text-dark"
+        className="text-7xl w-100 text-center family2 text-dark"
       >
         What critics are saying about us
-      </h2>
+      </h3>
       <div
         data-aos="fade"
         data-aos-duration="1400"

@@ -58,6 +58,9 @@ const TakeoutMenuContent = styled.div`
       background-color: #000;
       .TakeoutMenuRightC {
         width: 50%;
+        @media (max-width: 680px) {
+          width: 80%;
+        }
       }
     }
     @media (max-width: 980px) {
