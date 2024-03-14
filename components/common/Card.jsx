@@ -24,16 +24,18 @@ export default function Card({ index, x }) {
         />
         <div className="gradient3"></div>
         <div className="NewsRightCenter w-100 h-100 flex item-center justify-center gap-1">
-          <div className="fs-16 a text-light text-white font-sans w-100 text-end">
-            Add to Cart{" "}
+          <div className="flex items-center w-full h-full justify-center gap-1">
+            <div className="fs-16 cursor-pointer a text-light text-white font-sans w-100 text-end">
+              Add to Cart{" "}
+            </div>
+            <div className="fs-16 text-white">/</div>
+            <Link
+              href={"/restaurant/menu/2303404"}
+              className="fs-16 a text-light text-white font-sans w-100"
+            >
+              Details
+            </Link>
           </div>
-          <div className="fs-16 text-white">/</div>
-          <Link
-            href={"/takeout/2303404"}
-            className="fs-16 a text-light text-white font-sans w-100"
-          >
-            Details
-          </Link>
         </div>
       </div>
       <div className="w-100">
@@ -91,6 +93,7 @@ const CardContent = styled.div`
       z-index: 200;
       position: absolute;
       justify-content: center;
+      align-items: center;
     }
     .NewsRightCenter {
       /* opacity: 0;

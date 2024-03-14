@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 export default function CartSummary() {
-  const { bag } = useSelector((store) => store.bag);
+  // const { bag } = useSelector((store) => store.bag);
 
   return (
     <CartContentContainer>
@@ -22,7 +22,7 @@ export default function CartSummary() {
           </div>
         </div>
         <div className="w-100 py-2 flex column gap-2">
-          {bag.slice(0, 1)?.map((x) => {
+          {[].slice(0, 1)?.map((x) => {
             return <Card key={x.id} x={x} type={"payment"} />;
           })}
         </div>

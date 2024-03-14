@@ -3,12 +3,12 @@ import { BiPlus, BiMinus } from "react-icons/bi";
 import { TiTimes } from "react-icons/ti";
 import { useDispatch, useSelector } from "react-redux";
 // import { Delete } from "../modals";
-import {
-  removeBagItem,
-  increaseBagQty,
-  decreaseBagQty,
-  onCartAlert,
-} from "../../Features";
+// import {
+//   removeBagItem,
+//   increaseBagQty,
+//   decreaseBagQty,
+//   onCartAlert,
+// } from "../../Features";
 import { RxCross1 } from "react-icons/rx";
 
 export default function Card({ x, type }) {
@@ -44,7 +44,9 @@ export default function Card({ x, type }) {
   return (
     <tr key={x?._id}>
       <td className="svg">
-        <div className="iconsWrapper" onClick={() => dispatch(onCartAlert(x))}>
+        <div className="iconsWrapper" 
+        // onClick={() => dispatch(onCartAlert(x))}
+        >
           <RxCross1 />
         </div>
       </td>
@@ -62,7 +64,7 @@ export default function Card({ x, type }) {
           <button
             className="cartBtn"
             disabled={x?.quantity === x?.countInStock}
-            onClick={() => dispatch(increaseBagQty(x))}
+            // onClick={() => dispatch(increaseBagQty(x))}
           >
             <BiPlus />
           </button>
@@ -70,7 +72,7 @@ export default function Card({ x, type }) {
           <button
             className="cartBtn"
             disabled={x?.quantity === 1}
-            onClick={() => dispatch(decreaseBagQty(x))}
+            // onClick={() => dispatch(decreaseBagQty(x))}
           >
             <BiMinus />
           </button>
