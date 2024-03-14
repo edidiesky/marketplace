@@ -15,7 +15,7 @@ export default function Details() {
       <div className="w-85 flex auto column gap-4" style={{ gap: "3rem" }}>
         <div className="w-100 detop flex item-center justify-space gap-3">
           <h5 className="fs-12 family2 text-dark text-light">
-            Categories: HORS D'OEUVRES
+            Categories: HORS DOEUVRES
           </h5>
           <div className="flex item-center gap-2">
             <div className="flex item-center gap-2 fs-16 text-light family2">

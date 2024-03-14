@@ -9,7 +9,7 @@ export default function List() {
     <ListContent style={{ padding: "6rem 0" }}>
       <div className="w-85 auto wrapper">
         {menudata.map((x, index) => {
-          return <Card x={x} index={index} />;
+          return <Card x={x} key={index} index={index} />;
         })}
       </div>
     </ListContent>
