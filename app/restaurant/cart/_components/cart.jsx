@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import List from "./list";
+import List from "./cartcontent";
 import Banner from "@/components/common/Banner";
 import Navbar from "@/components/common/Navbar";
 

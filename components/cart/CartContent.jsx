@@ -17,12 +17,10 @@ export default function CartContent() {
           <table>
             <thead>
               <tr>
-                <th></th>
-                <th></th>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
+                <th className="font-mono">Product</th>
+                <th className="font-mono">Price</th>
+                <th className="font-mono">Quantity</th>
+                <th className="font-mono">Subtotal</th>
               </tr>
             </thead>
             <tbody>

@@ -46,22 +46,15 @@ export const Table = styled.div`
         tr {
           text-align: start;
           z-index: 200;
-          background: #f7f7f7;
           text-align: start;
           transition: all 0.3s var(--transition-2);
-          &:hover {
-            background: rgb(0 0 0 / 13%);
-          }
           th {
-            font-size: 1.3rem;
             color: var(--blue-3);
-            font-weight: 600;
             text-align: start;
             text-transform: uppercase;
-
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             padding: 2rem 1.8rem;
-            font-family: "Barlow", sans-serif;
+
             transition: all 0.3s var(--transition-2);
           }
         }
@@ -71,38 +64,15 @@ export const Table = styled.div`
         tr {
           transition: all 0.5s var(--transition-2);
           z-index: 200;
-
-          &:hover {
-            background: #2364c41f;
-            td {
-              color: var(--blue-3);
-            }
-          }
           td {
-            font-size: 1.2rem;
             font-weight: 500;
             text-align: start;
-            padding: 1.5rem;
+            padding:1.8rem;
+
             color: var(--dark-1);
             border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             .true {
               color: #e72d2d;
-            }
-            .cartProduct {
-              width: 100%;
-              display: flex;
-              align-items: center;
-              gap: 2rem;
-              justify-content: center;
-              .imageWrapper {
-                width: 7rem;
-                position: relative;
-                border-radius: 5px;
-                img {
-                  width: 7rem;
-                  object-fit: cover;
-                }
-              }
             }
             .tablespan {
               display: block;
