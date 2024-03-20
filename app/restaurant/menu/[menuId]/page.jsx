@@ -6,6 +6,7 @@ export default function Page({ params }) {
   return (
     <>
       <Banner type={"type"} />
+      {/* Cart Alert */}
       <Details menu={params.menuId} />
       <Footer />
     </>

@@ -16,7 +16,7 @@ export default function Plans() {
                 }
                 key={index}
               >
-                <div className="w-90 auto px-6">
+                <div className="w-90 card_wrapper auto px-6">
                   <h2
                     className={
                       index === 1
@@ -34,10 +34,10 @@ export default function Plans() {
                         <div className="w-100" key={index}>
                           <li className="w-85 auto flex column gap-2 fs-14 text-light center border-bottom py-1 auto">
                             <div className="flex w-100 item-center gap-2 justify-space">
-                              <h3 className="font-mono text-light fs-30 text-dark">
+                              <h3 className="font-mono text-light fs-30">
                                 {x.title}
                               </h3>
-                              <h3 className="font-mono text-light fs-20 text-dark">
+                              <h3 className="font-mono text-light fs-20">
                                 ${x.price}
                               </h3>
                             </div>
@@ -95,12 +95,27 @@ const PlansContent = styled.div`
         font-weight: normal;
         color: #fff;
       }
+      ul li {
+        h3 {
+          color: #fff;
+        }
+         h4 {
+          color: var(--grey-1);
+        }
+      }
     }
     h2 {
       font-size: 4.5rem;
       font-weight: normal;
       color: #000;
     }
+
+     ul li {
+        h3,
+        h4 {
+          color: #000;
+        }
+      }
   }
   .grid2 {
     display: grid;
