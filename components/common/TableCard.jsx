@@ -33,14 +33,14 @@ export default function TableCards({ x, type }) {
         <td className="text-3xl text-grey">${x?.price}</td>
         <td className="text-3xl text-grey">
           <div className="w-[160px] cursor-pointer flex items-center h-20 border border-[rgba(0,0,0,.5)]">
-            <span className="h-100 flex-[.4] text-4xl font-sans font-medium flex justify-center items-center text-dark">
+            <span className="h-100 flex-[.4] text-2xl font-sans font-medium flex justify-center items-center text-dark">
               <BiPlus />
             </span>
 
-            <span className="h-100 text-4xl font-sans font-medium justify-center flex border-r border-l border-[rgba(0,0,0,.5)] items-center flex-1 text-dark">
+            <span className="h-100 text-2xl font-sans font-medium justify-center flex border-r border-l border-[rgba(0,0,0,.5)] items-center flex-1 text-dark">
               1
             </span>
-            <span className="h-100 flex-[.4] flex justify-center items-center text-4xl font-sans font-medium text-dark">
+            <span className="h-100 flex-[.4] flex justify-center items-center text-2xl font-sans font-medium text-dark">
               <BiMinus />
             </span>
           </div>

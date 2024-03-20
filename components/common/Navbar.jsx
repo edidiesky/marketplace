@@ -33,12 +33,12 @@ export default function Navbar() {
   return (
     <NavbarContainer className="flex item-center">
       <div className="w-90 px-16 auto family2 flex justify-between gap-3 item-center">
-        <div className="flex item-center gap-2">
+        <Link href={'/'} className="flex item-center gap-2">
           <img
             src="https://avada.website/restaurant/wp-content/uploads/sites/112/2021/04/logo-svg.svg"
             alt=""
           />
-        </div>
+        </Link>
         <div className="w-100 flex item-center justify-end gap-4 lg:gap-16">
           {navbarList?.map((x, index) => {
             return (
